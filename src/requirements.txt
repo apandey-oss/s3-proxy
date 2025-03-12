@@ -1,5 +1,6 @@
 fastapi==0.115.11
 pydantic==2.10.*
+pydantic-settings
 uvicorn
 python-multipart # to use form-data in fastapi
 boto3
