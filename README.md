@@ -6,8 +6,8 @@ A fastapi based server to fetch from s3 bucket.
 ## Run development server
 
 ```sh
-cd ./src/app
-uvicorn main:app --reload
+cd ./src
+uvicorn app.main:fapp --reload
 ```
 
 ### Docker compose
