@@ -6,5 +6,10 @@ A fastapi based server to fetch from s3 bucket.
 ## Docker run 
 
 ```sh
-docker run --name s3-proxy -p 8080:80 -e s3_proxy_access_key=<ACCESS_KEY_ID> -e s3_proxy_secret_key=<SECRET_KEY> -d ghcr.io/apandey-oss/s3-proxy:latest
+docker run \
+    --name s3-proxy \
+    -p 8080:80 \
+    -e s3_proxy_access_key=XXXX \
+    -e s3_proxy_secret_key=XXXX \
+    -d ghcr.io/apandey-oss/s3-proxy:latest
 ```
