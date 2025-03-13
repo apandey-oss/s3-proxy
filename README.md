@@ -3,22 +3,8 @@
 A fastapi based server to fetch from s3 bucket.
 * this way you do not need to expose your bucket on internet if you want to access it's content on-prem.
 
-## Run development server
+## Docker run 
 
 ```sh
-export s3_proxy_access_key=<ACCESS_KEY_ID>
-export s3_proxy_secret_key=<SECRET_KEY>
-cd ./src
-uvicorn app.main:fapp --reload
-```
-
-### Docker compose
-
-```yaml
-services:
-  api:
-    build: .
-    ports:
-    -  8000:80
-    restart: always
+docker run --name s3-proxy -p 8080:80 -e s3_proxy_access_key=<ACCESS_KEY_ID> -e s3_proxy_secret_key=<SECRET_KEY> -d ghcr.io/apandey-oss/s3-proxy:latest
 ```
