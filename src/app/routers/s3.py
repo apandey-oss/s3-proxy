@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 
 # import mimetypes
 
-router = APIRouter(prefix="/s3", tags=["s3"])
+router = APIRouter()
 
 
 ## Path params
