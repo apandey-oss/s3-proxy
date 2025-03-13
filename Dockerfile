@@ -1,4 +1,4 @@
-FROM python:3.13-slim-bookworm
+FROM python:3.13-alpine
 # Debian 12 release (bookworm)
 
 ADD requirements.txt /tmp/requirements.txt
